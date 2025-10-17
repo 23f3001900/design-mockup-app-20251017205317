@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Startup Landing Page</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212; /* Dark background */
+            color: #ffffff; /* White text */
+            line-height: 1.6;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+
+        a {
+            color: #89cff0; /* Blue links */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #1e1e1e;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Hero Section Styles */
+        .hero {
+            background-color: #292929;
+            padding: 100px 20px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            color: #d4d4d4;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #89cff0;
+            color: #121212;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #5dade2;
+        }
+
+        /* Features Section Styles */
+        .features {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            color: #ffffff;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 0 20px;
+        }
+
+        .feature {
+            background-color: #1e1e1e;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 20px;
+        }
+
+        .feature h3 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+
+        .feature p {
+            color: #d4d4d4;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #1e1e1e;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #d4d4d4;
+        }
+
+        footer a {
+            color: #89cff0;
+            margin: 0 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5em;
+            }
+
+            .hero p {
+                font-size: 1em;
+            }
+
+            .features h2 {
+                font-size: 2em;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Acme Tech</h1>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Revolutionizing the Future</h1>
+        <p>Innovative solutions for a connected world. Join us on our journey to transform technology.</p>
+        <a href="#" class="cta-button">Get Started</a>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Key Features</h2>
+        <div class="features-grid">
+            <div class="feature">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACSHM8zAAABJElEQVRIDe3UMUoDQRCF4ROjK7ALsJuoK7CLsAu4i7ALuIuwC7CLsAuwi7ALC6jYm/3OycQvM/xW9t5yZ44903+zO0EQCkJzIIVoCs0ArUoK4QBNQI3SgXQBNwFnoBmoBX6ARqE5rQGgU6g0WpQc2qI6E2w6/L9q00/u60q6n0sXn4DLA3v1S7rW4m/r+hW1T/gQo/sM0cW4rS52gQ3f+R+jCjK24E6Q1nAfkUq3gQp/7gNo3YVowbA13AV80sTtgF0X7C9G68/hNqX9o6UjW1oXwE4mPqX9c6n46j4L4C+q3v+iT06wG1/gG0v0P1h7i/e36jJ+zO+hK8i7ALsIuwC7CLsAu4i7ALsIuwi7ALsAu4i6i9gF+hS57q8O9EAAAAABJRU5ErkJggg==" alt="Scalability">
+                <h3>Scalability</h3>
+                <p>Our platform is designed to scale with your growing needs, ensuring seamless performance and reliability.</p>
+            </div>
+            <div class="feature">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACSHM8zAAABXklEQVRIDe2VwQnCMBBF0wdgOwA4EawEYEOwEYCOwE4EOwE4EDgR7H/9k5mYnbL3j5mWbT7J4G6+S9yHAKlYt2Vw4gWq4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4
+</html>

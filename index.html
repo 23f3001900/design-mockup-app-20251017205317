@@ -3,147 +3,243 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech Startup Landing Page</title>
+    <title>Awesome Landing Page</title>
     <style>
         /* General Styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #121212; /* Dark background */
-            color: #ffffff; /* White text */
+            background-color: #121212;
+            color: #fff;
             line-height: 1.6;
-            overflow-x: hidden; /* Prevent horizontal scrolling */
+            overflow-x: hidden; /* Prevent horizontal scroll */
         }
 
-        a {
-            color: #89cff0; /* Blue links */
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
         }
 
         /* Header Styles */
         header {
-            background-color: #1e1e1e;
-            padding: 20px;
+            background: linear-gradient(to right, #333, #121212);
+            padding: 20px 0;
             text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-bottom: 1px solid #333;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #eee;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 
         /* Hero Section Styles */
-        .hero {
-            background-color: #292929;
-            padding: 100px 20px;
+        #hero {
+            background: linear-gradient(to right, #222, #121212);
+            padding: 80px 0;
             text-align: center;
-            margin-bottom: 40px;
         }
 
-        .hero h1 {
-            font-size: 3em;
+        #hero h2 {
+            font-size: 2.5em;
             margin-bottom: 20px;
-            color: #ffffff;
+            color: #eee;
         }
 
-        .hero p {
+        #hero p {
             font-size: 1.2em;
-            color: #d4d4d4;
+            color: #ccc;
             margin-bottom: 30px;
         }
 
-        .cta-button {
+        .btn {
             display: inline-block;
-            padding: 15px 30px;
-            background-color: #89cff0;
-            color: #121212;
+            padding: 12px 24px;
+            background-color: #64b5f6;
+            color: #fff;
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
             transition: background-color 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
         }
 
-        .cta-button:hover {
-            background-color: #5dade2;
+        .btn:hover {
+            background-color: #42a5f5;
+            transform: translateY(-2px);
         }
 
         /* Features Section Styles */
-        .features {
-            padding: 40px 20px;
-            text-align: center;
+        #features {
+            background: linear-gradient(to right, #121212, #222);
+            padding: 60px 0;
         }
 
-        .features h2 {
-            font-size: 2.5em;
-            margin-bottom: 30px;
-            color: #ffffff;
+        #features h2 {
+            font-size: 2em;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #eee;
         }
 
         .features-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
-            padding: 0 20px;
         }
 
-        .feature {
+        .feature-card {
             background-color: #1e1e1e;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
             transition: transform 0.3s ease;
         }
 
-        .feature:hover {
+        .feature-card:hover {
             transform: translateY(-5px);
         }
 
-        .feature img {
-            width: 50px;
-            height: 50px;
-            margin-bottom: 20px;
-        }
-
-        .feature h3 {
+        .feature-card h3 {
             font-size: 1.5em;
-            margin-bottom: 15px;
-            color: #ffffff;
+            margin-bottom: 10px;
+            color: #ddd;
         }
 
-        .feature p {
-            color: #d4d4d4;
+        .feature-card p {
+            color: #bbb;
+        }
+
+        /* Testimonials Section Styles */
+        #testimonials {
+            background: linear-gradient(to right, #222, #121212);
+            padding: 60px 0;
+        }
+
+        #testimonials h2 {
+            font-size: 2em;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #eee;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .testimonial-card {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .testimonial-card p {
+            color: #bbb;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        .testimonial-card .author {
+            font-weight: bold;
+            color: #ddd;
+            text-align: right;
+        }
+
+        /* Contact Section Styles */
+        #contact {
+            background: linear-gradient(to right, #121212, #222);
+            padding: 60px 0;
+        }
+
+        #contact h2 {
+            font-size: 2em;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #eee;
+        }
+
+        #contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        #contact-form label {
+            display: block;
+            margin-bottom: 8px;
+            color: #ddd;
+        }
+
+        #contact-form input[type="text"],
+        #contact-form input[type="email"],
+        #contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #333;
+            background-color: #1e1e1e;
+            color: #fff;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        #contact-form textarea {
+            resize: vertical;
+        }
+
+        #contact-form button {
+            padding: 12px 24px;
+            background-color: #64b5f6;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        #contact-form button:hover {
+            background-color: #42a5f5;
         }
 
         /* Footer Styles */
         footer {
             background-color: #1e1e1e;
-            padding: 20px;
+            padding: 20px 0;
             text-align: center;
-            font-size: 0.9em;
-            color: #d4d4d4;
-        }
-
-        footer a {
-            color: #89cff0;
-            margin: 0 10px;
+            color: #888;
+            border-top: 1px solid #333;
         }
 
         /* Responsive Design */
         @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.5em;
-            }
-
-            .hero p {
-                font-size: 1em;
-            }
-
-            .features h2 {
+            header h1 {
                 font-size: 2em;
             }
 
-            .features-grid {
+            #hero h2 {
+                font-size: 2em;
+            }
+
+            #hero p {
+                font-size: 1em;
+            }
+
+            .features-grid,
+            .testimonials-grid {
                 grid-template-columns: 1fr;
             }
         }
@@ -151,27 +247,101 @@
 </head>
 <body>
 
-    <!-- Header -->
     <header>
-        <h1>Acme Tech</h1>
+        <div class="container">
+            <h1>Awesome Landing Page</h1>
+        </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Revolutionizing the Future</h1>
-        <p>Innovative solutions for a connected world. Join us on our journey to transform technology.</p>
-        <a href="#" class="cta-button">Get Started</a>
+    <section id="hero">
+        <div class="container">
+            <h2>Welcome to Our Amazing Product</h2>
+            <p>Discover the best solution for your needs. We offer high-quality services and outstanding customer support.</p>
+            <a href="#features" class="btn">Learn More</a>
+        </div>
     </section>
 
-    <!-- Features Section -->
-    <section class="features">
-        <h2>Key Features</h2>
-        <div class="features-grid">
-            <div class="feature">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACSHM8zAAABJElEQVRIDe3UMUoDQRCF4ROjK7ALsJuoK7CLsAu4i7ALuIuwC7CLsAuwi7ALC6jYm/3OycQvM/xW9t5yZ44903+zO0EQCkJzIIVoCs0ArUoK4QBNQI3SgXQBNwFnoBmoBX6ARqE5rQGgU6g0WpQc2qI6E2w6/L9q00/u60q6n0sXn4DLA3v1S7rW4m/r+hW1T/gQo/sM0cW4rS52gQ3f+R+jCjK24E6Q1nAfkUq3gQp/7gNo3YVowbA13AV80sTtgF0X7C9G68/hNqX9o6UjW1oXwE4mPqX9c6n46j4L4C+q3v+iT06wG1/gG0v0P1h7i/e36jJ+zO+hK8i7ALsIuwC7CLsAu4i7ALsIuwi7ALsAu4i6i9gF+hS57q8O9EAAAAABJRU5ErkJggg==" alt="Scalability">
-                <h3>Scalability</h3>
-                <p>Our platform is designed to scale with your growing needs, ensuring seamless performance and reliability.</p>
+    <section id="features">
+        <div class="container">
+            <h2>Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Feature 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Feature 2</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Feature 3</h3>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
             </div>
-            <div class="feature">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACSHM8zAAABXklEQVRIDe2VwQnCMBBF0wdgOwA4EawEYEOwEYCOwE4EOwE4EDgR7H/9k5mYnbL3j5mWbT7J4G6+S9yHAKlYt2Vw4gWq4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4oAiqo4
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p>"This product has completely transformed the way I work. It's incredibly efficient and user-friendly."</p>
+                    <p class="author">- John Doe</p>
+                </div>
+                <div class="testimonial-card">
+                    <p>"I've tried many similar products, but this one is by far the best. The customer support is also outstanding."</p>
+                    <p class="author">- Jane Smith</p>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Highly recommended! This product has exceeded all my expectations. I can't imagine my life without it now."</p>
+                    <p class="author">- Peter Jones</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            &copy; 2025 Awesome Landing Page
+        </div>
+    </footer>
+
+    <script>
+        // Form Validation
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            const emailInput = document.getElementById('email');
+            const emailValue = emailInput.value.trim();
+
+            if (!isValidEmail(emailValue)) {
+                alert('Please enter a valid email address.');
+                event.preventDefault(); // Prevent form submission
+            }
+        });
+
+        function isValidEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+    </script>
+
+</body>
 </html>
